@@ -13,7 +13,8 @@ An implementation against http://codekata.com/kata/kata14-tom-swift-under-the-mi
   
  # Run Method:
  Open cmd/terminal:
-    * python3 ngram.py <<inputfile name>> <<ngram key length>>
+    * python3 ngram.py <<'inputfile name'>> <<'ngram key length'>>
+  
  The code should show some meaningfull log to understand what random key has been picked and how it has
   identified the further text.
   
