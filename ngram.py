@@ -91,13 +91,15 @@ def generateNewText(ngram, chars=2):
 
     while _tuplifyString(start) in list(six.iterkeys(ngram)):
         plausibles = ngram[_tuplifyString(start)]
-        logging.info(' The possible next words against the picked pair \'%s\' could be %s ', start, plausibles)
+        # Logging should only be enabled for small input.
+        # logging.info(' The possible next words against the picked pair \'%s\' could be %s ', start, plausibles)
         nextWord = plausibles[random.randrange(len(plausibles))]
         output = output + ' ' + nextWord
         output = output.split(' ')
         start = ' '.join(output[len(output) - chars:len(output)])
         output = ' '.join(output)
-        logging.info(' The next text : %s ', output)
+        # Logging should only be enabled for small input.
+        # Logging.info(' The next text : %s ', output)
     return output
 
 
